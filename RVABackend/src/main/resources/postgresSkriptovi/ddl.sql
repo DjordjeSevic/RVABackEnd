@@ -44,9 +44,9 @@ create index idx_pk_fakultet on fakultet(id);
 create index idx_pk_departman on departman(id);
 create index idx_pk_student on student(id);
 
-create index idx_fk_departman_fakultet on departman(fakultet)
-create index idx_fk_student_departman on student(departman)
-create index idx_fk_student_status on student(status)
+create index idx_fk_departman_fakultet on departman(fakultet);
+create index idx_fk_student_departman on student(departman);
+create index idx_fk_student_status on student(status);
 
 
 create sequence status_id_seq
